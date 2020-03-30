@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html lang="en">
     <head>
-        <meta charse="utf-8">
+        <meta charset="utf-8">
         <title>The Code Review - Newsletter Signup</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/normalize.css">
@@ -52,9 +52,8 @@
 
                 <div class="item">
                     <label for="state" class="col-1">State</label>
-                    <select class="arrows" type="state" id="state" name="user_state">
+                    <select class="arrows" id="state" name="user_state">
                             <option value="" selected="selected" disabled hidden>Choose State</option>
-                        <optgroup class="statelist">
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -106,7 +105,6 @@
                             <option value="WV">West Virginia</option>
                             <option value="WI">Wisconsin</option>
                             <option value="WY">Wyoming</option>
-                        </optgroup>
                     </select>
                 </div>
 
@@ -133,9 +131,8 @@
             
                 <input type="radio" id="plain_text-format" value="plain_text-format" name="user_format"> <label class="light" for="plain_text-format">Plain text</label><br>
         
-            <label>Other topics you'd like to hear about</label>
-
-                <textarea id="other-topics" name="user_topics"> </textarea>
+            <label for="other-topics">Other topics you'd like to hear about</label>
+            <textarea id="other-topics" name="user_topics"> </textarea>
         
         </fieldset>
 

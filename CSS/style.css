@@ -183,24 +183,28 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
  }
-
  .item {
     display: flex;
-    align-items: left;
     background-color: #f8d71d;
     width: 100%;
+    margin-bottom: 15px;
  }
-
+ .item input,
+ .item select {
+     margin-bottom: 0;
+ }
 .col-1 {
     width: 40%;
+    align-self: center;
 }
 
 input[id="zip-code"] {
     width: 40%;
     margin-right: 41%;
 }
+
  .heading{
      width: 50%;
      max-width: 500px;
