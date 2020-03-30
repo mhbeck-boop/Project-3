@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+
+/**--------------- Base Styles and Form Styles---------------------------**/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;   
+    text-align: center;
+}
+
+form {
+    max-width: 300px;
+    margin: auto;
+    border-top: 2px solid #273249; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: #f8d71d;
+    border-radius: 0 0 10px 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+  label {
+    display: inline-block;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 95%;
+    height:50px;
+    background-color: rgb(78, 187, 181);
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+
+}
+/**--------------- Layout Styles---------------------------**/
+
+.main-header {
+    background: #2d3945;
+    color: whitesmoke;
+    padding: 10px 0 10px 0;
+    margin-top: 0;
+    font-size: .85em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.heading {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 3px;
+    padding:0 35px 25px 35px;
+    border-bottom: 3px solid #2d3945;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px auto 150px;
+    font-style: italic;
+    font-size: .8em;
+}
+
+/**--------------- Fieldset Styles---------------------------**/
+
+p,
+label {
+    color: #050505;
+    font-weight: 100;
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select { 
+    background: #fff;
+    width:100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder {
+    text-align: right;
+    opacity: .4;
+}
+
+input[id="zip-code"] {
+    display: block;
+    width:50%;
+}
+
+.information {
+    display: flex;
+    border-bottom: 2px solid #2d3945; 
+    margin-bottom: 10px;
+}
+
+.newsletter {
+    line-height: 2;
+}
+
+select {
+    color: rgb(128, 125, 125, .75);
+}
+
+.heading h2 {
+    font-size: 1.25em;
+}
+ legend {
+    color: #2d3945;
+    font-size: 1.4em; 
+    font-weight:900;
+    margin-bottom: 15px;
+ }
+
+ #nl {
+     margin-bottom: 0;
+ }
+
+ option:disabled {
+    color: rgb(128, 125, 125);
+    font-weight: bold;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+}
+
+.light {
+    padding-left: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input:focus,
+textarea:focus {
+    border: 5px solid #2d3945;
+    transition: background-color 1s ease-in;
+    background-color: #9fbbf7;
+}
+
+input,
+textarea {
+    transition: background-color 2s ease-out;
+}
+
+/**--------------- Media Queries---------------------------**/
+
+@media (min-width:768px) {
+
+ form {
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 3px;
+ }
+
+ .flex-wrapper{
+     display: flex;
+     flex-direction: row;
+ }
+
+ .heading{
+     width: 50%;
+     max-width: 500px;
+     margin: auto;
+ }
+
+ .main-header {
+    width: 100%;
+    margin: auto;
+ }
+}
